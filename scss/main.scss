@@ -9,7 +9,7 @@
 @use 'exercise1-palette';
 
 // Ejercicio 2: Temas — cambia entre theme-a y theme-b aquí:
-@use 'theme-a'; // <-- cambiar a 'theme-b' para el Tema B (y lanzar el npm run build)
+@use 'theme-a'; // <-- cambiar a 'theme-b' para el Tema B (y ejecutar el comando npm run build)
 @use 'exercise2-themes';
 
 // Ejercicio 3: Barra de navegación con Flexbox
