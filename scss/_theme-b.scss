@@ -1,0 +1,16 @@
+// ============================================================
+// Tema B — Azul
+// Importar este fichero en main.scss para aplicar el Tema B.
+// ============================================================
+
+:root {
+  --theme-color-base:      #0000ff;
+  --theme-color-important: #00004a;
+  --theme-color-warning:   #00ffff;
+
+  --theme-font-principal:  'Trebuchet MS', sans-serif;
+  --theme-font-secondary:  'Lucida Console', monospace;
+
+  --theme-border-radius:   10px;
+  --theme-box-shadow:      8px 8px 16px rgba(0, 0, 0, 0.75);
+}

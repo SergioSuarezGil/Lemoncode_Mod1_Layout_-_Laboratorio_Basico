@@ -1,0 +1,16 @@
+{
+  "name": "lemoncode_mod1_layout_-_laboratorio_basico",
+  "version": "1.0.0",
+  "description": "Módulo 1 - Layout - Laboratorio Básico",
+  "author": "Sergio Suárez Gil",
+  "license": "MIT",
+  "keywords": ["sass", "scss", "flexbox", "grid", "bem", "layout"],
+  "private": false,
+  "scripts": {
+    "build": "sass scss/main.scss css/main.css",
+    "watch": "sass --watch scss/main.scss css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

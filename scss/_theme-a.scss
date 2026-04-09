@@ -1,0 +1,16 @@
+// ============================================================
+// Tema A — Rojo
+// Importar este fichero en main.scss para aplicar el Tema A.
+// ============================================================
+
+:root {
+  --theme-color-base:      #ff0000;
+  --theme-color-important: #8b0000;
+  --theme-color-warning:   #ffb6c1;
+
+  --theme-font-principal:  'Georgia', serif;
+  --theme-font-secondary:  'Courier New', monospace;
+
+  --theme-border-radius:   0px;
+  --theme-box-shadow:      -8px 8px 16px rgba(0, 0, 0, 0.75);
+}

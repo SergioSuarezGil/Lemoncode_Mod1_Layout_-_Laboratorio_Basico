@@ -1,0 +1,51 @@
+// ============================================================
+// Ejercicio 1: Paleta de colores dinámica
+// Genera 4 tonos más oscuros y 4 más claros a partir de un color base.
+// ============================================================
+@use 'sass:color';
+
+$palette-step: 10%;
+
+$palette-color-red:  #e74c3c;
+$palette-color-blue:  #2980b9;
+$palette-color-green: #27ae60;
+
+@mixin generate_palette($color-base) {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 12px;
+
+  .palette__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    border-radius: 6px;
+
+    .palette__label {
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    &--darken-4  { background-color: color.adjust($color-base, $lightness: -($palette-step * 4)); }
+    &--darken-3  { background-color: color.adjust($color-base, $lightness: -($palette-step * 3)); }
+    &--darken-2  { background-color: color.adjust($color-base, $lightness: -($palette-step * 2)); }
+    &--darken-1  { background-color: color.adjust($color-base, $lightness: -$palette-step); }
+    &--base      { background-color: $color-base; }
+    &--lighten-1 { background-color: color.adjust($color-base, $lightness: $palette-step); }
+    &--lighten-2 { background-color: color.adjust($color-base, $lightness: $palette-step * 2); }
+    &--lighten-3 { background-color: color.adjust($color-base, $lightness: $palette-step * 3); }
+    &--lighten-4 { background-color: color.adjust($color-base, $lightness: $palette-step * 4); }
+  }
+}
+
+.palette {
+  &--red   { @include generate_palette($palette-color-red); }
+  &--blue  { @include generate_palette($palette-color-blue); }
+  &--green { @include generate_palette($palette-color-green); }
+}

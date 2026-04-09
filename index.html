@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio Módulo Layout</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Laboratorio Módulo Layout</h1>
+
+    <!-- =====================================================
+         Ejercicio 1: Paleta de colores dinámica
+    ====================================================== -->
+    <section>
+      <h2>Ejercicio 1: Crear una paleta de colores dinámica</h2>
+
+      <div class="palette palette--red">
+        <div class="palette__box palette__box--darken-4"><span class="palette__label">Darken 4</span></div>
+        <div class="palette__box palette__box--darken-3"><span class="palette__label">Darken 3</span></div>
+        <div class="palette__box palette__box--darken-2"><span class="palette__label">Darken 2</span></div>
+        <div class="palette__box palette__box--darken-1"><span class="palette__label">Darken 1</span></div>
+        <div class="palette__box palette__box--base"><span class="palette__label">Base color</span></div>
+        <div class="palette__box palette__box--lighten-1"><span class="palette__label">Lighten 1</span></div>
+        <div class="palette__box palette__box--lighten-2"><span class="palette__label">Lighten 2</span></div>
+        <div class="palette__box palette__box--lighten-3"><span class="palette__label">Lighten 3</span></div>
+        <div class="palette__box palette__box--lighten-4"><span class="palette__label">Lighten 4</span></div>
+      </div>
+
+      <div class="palette palette--blue">
+        <div class="palette__box palette__box--darken-4"><span class="palette__label">Darken 4</span></div>
+        <div class="palette__box palette__box--darken-3"><span class="palette__label">Darken 3</span></div>
+        <div class="palette__box palette__box--darken-2"><span class="palette__label">Darken 2</span></div>
+        <div class="palette__box palette__box--darken-1"><span class="palette__label">Darken 1</span></div>
+        <div class="palette__box palette__box--base"><span class="palette__label">Base color</span></div>
+        <div class="palette__box palette__box--lighten-1"><span class="palette__label">Lighten 1</span></div>
+        <div class="palette__box palette__box--lighten-2"><span class="palette__label">Lighten 2</span></div>
+        <div class="palette__box palette__box--lighten-3"><span class="palette__label">Lighten 3</span></div>
+        <div class="palette__box palette__box--lighten-4"><span class="palette__label">Lighten 4</span></div>
+      </div>
+
+      <div class="palette palette--green">
+        <div class="palette__box palette__box--darken-4"><span class="palette__label">Darken 4</span></div>
+        <div class="palette__box palette__box--darken-3"><span class="palette__label">Darken 3</span></div>
+        <div class="palette__box palette__box--darken-2"><span class="palette__label">Darken 2</span></div>
+        <div class="palette__box palette__box--darken-1"><span class="palette__label">Darken 1</span></div>
+        <div class="palette__box palette__box--base"><span class="palette__label">Base color</span></div>
+        <div class="palette__box palette__box--lighten-1"><span class="palette__label">Lighten 1</span></div>
+        <div class="palette__box palette__box--lighten-2"><span class="palette__label">Lighten 2</span></div>
+        <div class="palette__box palette__box--lighten-3"><span class="palette__label">Lighten 3</span></div>
+        <div class="palette__box palette__box--lighten-4"><span class="palette__label">Lighten 4</span></div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Ejercicio 2: Dos temas distintos
+    ====================================================== -->
+    <section>
+      <h2>Ejercicio 2: Crear dos temas distintos</h2>
+      <p>
+        <em>
+          Para cambiar de tema, edita <code>scss/main.scss</code> y cambia
+          <code>@use 'theme-a'</code> por <code>@use 'theme-b'</code>,
+          luego recompila con <code>npm run build</code>.
+        </em>
+      </p>
+
+      <div class="theme-demo">
+        <div class="theme-demo__colors">
+          <div class="theme-demo__box theme-demo__box--base">Base</div>
+          <div class="theme-demo__box theme-demo__box--important">Important</div>
+          <div class="theme-demo__box theme-demo__box--warning">Warning</div>
+        </div>
+        <div class="theme-demo__fonts">
+          <p class="theme-demo__font theme-demo__font--principal">Principal font</p>
+          <p class="theme-demo__font theme-demo__font--secondary">Secondary font</p>
+        </div>
+        <div class="theme-demo__shadow">Box with shadow</div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Ejercicio 3: Barra de navegación con Flexbox
+    ====================================================== -->
+    <section>
+      <h2>Ejercicio 3: Barra de navegación con Flexbox</h2>
+
+      <nav class="navbar">
+        <div class="navbar__brand">Lemoncode</div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Blog</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link navbar__link--active">Activities</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- =====================================================
+         Ejercicio 4: Card con Grid CSS
+    ====================================================== -->
+    <section>
+      <h2>Ejercicio 4: Card con Grid CSS</h2>
+
+      <div class="card">
+        <img
+          class="card__image"
+          src="https://picsum.photos/300/190"
+          alt="Imagen de la card"
+        />
+        <div class="card__body">
+          <span class="card__tag">Viajes</span>
+          <h3 class="card__title">Título</h3>
+          <p class="card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            deleniti enim aliquam blanditiis quod quasi nesciunt. Sed natus
+            cupiditate fuga repellendus, commodi ipsum nostrum quae, nobis
+            veritatis amet est cumque.
+          </p>
+        </div>
+        <div class="card__published">Publicado: <span>20 de marzo de 2020</span></div>
+        <button class="card__button">Más información</button>
+      </div>
+    </section>
+  </body>
+</html>
