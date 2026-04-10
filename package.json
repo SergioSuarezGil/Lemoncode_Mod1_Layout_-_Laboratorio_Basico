@@ -4,11 +4,18 @@
   "description": "Módulo 1 - Layout - Laboratorio Básico",
   "author": "Sergio Suárez Gil",
   "license": "MIT",
-  "keywords": ["sass", "scss", "flexbox", "grid", "bem", "layout"],
+  "keywords": [
+    "sass",
+    "scss",
+    "flexbox",
+    "grid",
+    "bem",
+    "layout"
+  ],
   "private": false,
   "scripts": {
-    "build": "sass scss/main.scss css/main.css",
-    "watch": "sass --watch scss/main.scss css/main.css"
+    "build": "sass scss/styles.scss css/styles.css",
+    "watch": "sass --watch scss/styles.scss css/styles.css"
   },
   "devDependencies": {
     "sass": "^1.77.0"
